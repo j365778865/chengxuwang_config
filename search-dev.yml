@@ -6,6 +6,8 @@ spring:
   data:
     elasticsearch:
       cluster-nodes: 192.168.235.235:9300
+  rabbitmq:
+    host: 192.168.235.235
 eureka:
   client:
     serviceUrl:             #Eureka客户端与Eureka服务端进行交互的地址
