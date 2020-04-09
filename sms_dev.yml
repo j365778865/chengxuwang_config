@@ -1,0 +1,15 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: chengxuwangt-sms
+  rabbitmq:
+    host: 192.168.235.235
+    username: guest
+    password: guest
+aliyun:
+  sms:
+    accessKeyId: LTAI4FmDpU1kL68JAqFznA8Y
+    accessKeySecret: hU3VFMH8Em0nkTt5Hk5uh9jzMVHnF2
+    template_code: SMS_175070234
+    sign_name: tensquare

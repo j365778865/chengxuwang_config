@@ -1,0 +1,22 @@
+server: 
+  port: 9005
+spring: 
+  application:  
+    name: tensquare-gathering #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/chengxuwang_gathering?characterEncoding=UTF8&&useSSL=false
+    username: root
+    password: "123456"
+  redis:
+    host: 192.168.235.235
+  jpa: 
+    database: MySQL
+    show-sql: true
+    open-in-view: false
+eureka:
+  client:
+    serviceUrl:             #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true

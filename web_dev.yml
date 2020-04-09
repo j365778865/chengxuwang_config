@@ -1,0 +1,40 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: chengxuwang-web
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true   #模块之间可以跨域访问
+zuul:
+  routes:
+    chengxuwang-gathering:
+      path: /gathering/**
+      serviceId: chengxuwang-gathering
+    chengxuwang‐article:
+      path: /article/**   #配置请求URL的请求规则
+      serviceId: chengxuwang‐article  #指定Eureka注册中心中的服务id
+    chengxuwang-base:
+      path: /base/**
+      serviceId: chengxuwang-base
+    chengxuwang-friend:
+      path: /friend/**
+      serviceId: chengxuwang-friend
+    chengxuwang-qa:
+      path: /qa/**
+      serviceId: chengxuwang-qa
+    chengxuwang-recruit:
+      path: /recruit/**
+      serviceId: chengxuwang-recruit
+    chengxuwang-spit:
+      path: /spit/**
+      serviceId: chengxuwang-spit
+    chengxuwang-user:
+      path: /user/**
+      serviceId: chengxuwang-user
+    chengxuwang-search:
+      path: /search/**
+      serviceId: chengxuwang-search
