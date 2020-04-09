@@ -2,3 +2,6 @@ jwt:
  config:
       key: chengxuwang
       ttl: 360000
+spring:
+  rabbitmq:
+    host: 192.168.235.235
