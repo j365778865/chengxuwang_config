@@ -17,8 +17,8 @@ zuul:
       path: /gathering/**
       serviceId: chengxuwang-gathering
     chengxuwang‐article:
-      path: /article/**   #配置请求URL的请求规则
-      serviceId: chengxuwang‐article  #指定Eureka注册中心中的服务id
+      path: /article/**
+      serviceId: chengxuwang‐article
     chengxuwang-base:
       path: /base/**
       serviceId: chengxuwang-base
