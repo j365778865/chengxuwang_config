@@ -2,7 +2,7 @@ server:
   port: 9004
 spring: 
   application:  
-    name: chengxuwang-article #指定服务名
+    name: chengxuwang-article
   datasource:  
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.235.235:3306/chengxuwang_article?characterEncoding=UTF8&&useSSL=false
@@ -22,7 +22,7 @@ spring:
     host: 192.168.235.235
 eureka:
   client:
-    serviceUrl:             #Eureka客户端与Eureka服务端进行交互的地址
+    serviceUrl:
       defaultZone: http://127.0.0.1:6868/eureka/
   instance:
     prefer-ip-address: true
