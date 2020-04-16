@@ -2,10 +2,10 @@ server:
   port: 9003
 spring: 
   application:  
-    name: tensquare-qa #指定服务名
+    name: chengxuwang-qa #指定服务名
   datasource:  
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/chengxuwang_qa?characterEncoding=UTF8&&useSSL=false
+    url: jdbc:mysql://192.168.235.235:3306/chengxuwang_qa?characterEncoding=UTF8&&useSSL=false
     username: root
     password: "123456"
   jpa: 
