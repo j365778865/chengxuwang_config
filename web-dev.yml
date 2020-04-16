@@ -10,15 +10,12 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:6868/eureka/
   instance:
-    prefer-ip-address: true   #模块之间可以跨域访问
+    prefer-ip-address: true
 zuul:
   routes:
     chengxuwang-gathering:
       path: /gathering/**
       serviceId: chengxuwang-gathering
-    chengxuwang‐article:
-      path: /article/**
-      serviceId: chengxuwang‐article
     chengxuwang-base:
       path: /base/**
       serviceId: chengxuwang-base
@@ -40,3 +37,6 @@ zuul:
     chengxuwang-search:
       path: /search/**
       serviceId: chengxuwang-search
+    chengxuwang‐article:
+      path: /article/**
+      serviceId: chengxuwang-article
